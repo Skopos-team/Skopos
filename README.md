@@ -121,8 +121,6 @@ reward_list = agent.run()
 ```
 
 
-# Structure explanation and implemented techniques
-
 ## Documentation
 
 The documentation tries to give you a brief intuition regarding each method with problems, advantages and how to use it from the code point of view.
