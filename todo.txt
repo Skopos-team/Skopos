@@ -14,4 +14,3 @@
 Priority:
 
 13. solving problem with LSTM
-14. adding tensorboad variables.
