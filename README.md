@@ -30,7 +30,14 @@ env.observation_space.shape[i]
 
 To get the input state dimension.
 
-### Installation
+### Installation and requirements
+
+The requirements are:
+
+- python >= 2.7.13
+- tensorflow 1.3
+- numpy 1.9
+- matplotlib 2.0.2
 
 You can clone the repository or install it from pip.
 
