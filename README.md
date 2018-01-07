@@ -48,7 +48,7 @@ Then you can clone the repository or install it from pip.
 
 	$ pip install skopos 
 
-If you want to use a OpenAI Gym environment, install gym from pip using:
+If you want to use an OpenAI Gym environment, install gym from pip using:
 
 	$ pip install gym
 
@@ -193,7 +193,7 @@ The target q is generated using the discounted rewards in a certain episode.
 
 The update is done using the policy which is represented by the neural network a = pi(a/S, u) where u are the weights. It defines the objective function as the total discounted reward. [intuition: we know the outcome of our actions, promote good actions and punish bad ones.]
 
-##### VanillaPolicyGradient
+#### VanillaPolicyGradient
 
 The policy is learnt iteratively updating the network weights after the finish of each episode considering instead of the TargetQ value, the discounted rewards of the episode.
 
@@ -201,7 +201,7 @@ The policy is learnt iteratively updating the network weights after the finish o
 
 - Output: probability to take each action after applying to action value function Q(S, a) a Soft-max layer.
 
-##### AdvantageActorCritic
+#### AdvantageActorCritic
 
 It approximates policy gradient, using the Advantage function A(S, a) instead of the discounted rewards Rt, to decrease the variance of the gradients.
 
