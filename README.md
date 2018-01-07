@@ -34,7 +34,7 @@ To get the input state dimension.
 
 The requirements are:
 
-- python>=2.7.13
+- python=2.7
 - tensorflow>=1.4.0
 - numpy>=1.13.1
 - matplotlib>=2.0.2
