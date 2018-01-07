@@ -48,6 +48,10 @@ Then you can clone the repository or install it from pip.
 
 	$ pip install skopos 
 
+If you want to use a OpenAI Gym environment, install gym from pip using:
+
+	$ pip install gym
+
 ### Usage
 
 ```python
