@@ -40,7 +40,11 @@ The requirements are:
 - matplotlib>=2.0.2
 - scipy>=1.0.0
 
-You can clone the repository or install it from pip.
+Currently there is a problem with matplotlib. Before installing skopos, install matplotlib from conda.
+
+	$ conda install matplotlib
+
+Then you can clone the repository or install it from pip.
 
 	$ pip install skopos 
 

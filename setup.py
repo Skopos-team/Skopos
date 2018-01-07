@@ -1,16 +1,45 @@
-from distutils.core import setup, find_packages
+from distutils.core import setup
+from setuptools import setup, find_packages
+
+def check_dependencies():
+    install_requires = []
+
+    # Just make sure dependencies exist, I haven't rigorously
+    # tested what the minimal versions that will work are
+    # (help on that would be awesome)
+    try:
+        import numpy
+    except ImportError:
+        install_requires.append('numpy')
+    try:
+        import scipy
+    except ImportError:
+        install_requires.append('scipy')
+    try:
+        import tensorflow
+    except ImportError:
+        install_requires.append('tensorflow')
+    return install_requires
+
+install_requires = check_dependencies()
 
 setup(
   name = 'skopos',
-  packages = ['skopos'],
-  version = '0.1',
+  # packages = ['skopos'],
+  version = '0.5',
   description = 'Deep Reinforcement Learning Library',
   author = 'Skopos-team',
-  packages=[package for package in find_packages() if package.startswith('skopos')],
-  install_requires=['numpy>=1.13.1', 'tensorflow>=1.4', 'matplotlib>=2.0.2','scipy>=1.0.0', 'matplotlib>=2.0.2'],
+  packages=find_packages(),
+  # packages=[package for package in find_packages() if package.startswith('skopos')],
+  install_requires=install_requires,
   author_email = 'skopos.library@gmail.com',
   url = 'https://github.com/Skopos-team/Skopos', 
-  download_url = 'https://github.com/Skopos-team/Skopos/archive/0.1.tar.gz',
+  license='Apache2',
+  download_url = 'https://github.com/Skopos-team/Skopos/archive/0.5.tar.gz',
   keywords = ['testing', 'logging', 'example'],
-  classifiers = [],
+  classifiers = ['Programming Language :: Python :: 2.7',
+                  'Operating System :: POSIX',
+                  'Operating System :: Unix',
+                  'Operating System :: MacOS'
+                  ],
 )
