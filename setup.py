@@ -26,7 +26,7 @@ install_requires = check_dependencies()
 setup(
   name = 'skopos',
   # packages = ['skopos'],
-  version = '0.5',
+  version = '0.6',
   description = 'Deep Reinforcement Learning Library',
   author = 'Skopos-team',
   packages=find_packages(),
@@ -35,7 +35,7 @@ setup(
   author_email = 'skopos.library@gmail.com',
   url = 'https://github.com/Skopos-team/Skopos', 
   license='Apache2',
-  download_url = 'https://github.com/Skopos-team/Skopos/archive/0.5.tar.gz',
+  download_url = 'https://github.com/Skopos-team/Skopos/archive/0.6.tar.gz',
   keywords = ['testing', 'logging', 'example'],
   classifiers = ['Programming Language :: Python :: 2.7',
                   'Operating System :: POSIX',
