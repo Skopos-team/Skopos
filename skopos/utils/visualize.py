@@ -23,7 +23,7 @@ class Plot(object):
 		ax.plot(episodes_length)
 
 		ax = plt.subplot(gs[0, 2])
-		ax.set_title("Max expected reward per episode")
+		ax.set_title("Avg expected reward per episode")
 		ax.plot(avg_max_exp_rewards)
 
 		plt.show()

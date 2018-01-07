@@ -1,0 +1,17 @@
+1. revisit network.check_input_layer() method -- more extendible.
+2. find place where to put tf.reset_default_graph()
+3. manage the bootstrap value in case it doesn't finish the game and reaches the max number of steps.
+4. updating netowrk builder, give the user the possibility to the user to set env input dimensions.
+5. checking the distributed optimizer in network_builder -- why the norms has 40.0 as value?
+6. looking for better weights initialization in conv layers.
+7. function to stop the training based on the avg rewards (for understanding automatically when is time to stop training).
+8. gridsearch for tuning parameters.
+9. comparison training. running multiple models at the same time (for comparing the techniques and find the best one).
+10. tool for analyze the code, number of duplicate lines...
+11. looking for trust region policy optimization.
+12. Generalized Adavantage Estimation - useful in TRPO too (paper in the folder) is a method that must be plugged to a learner (PolicyGradientLearner), as DoubleNetwork for the ValueIterationLearner, threat both of them as another object (Support).
+
+Priority:
+
+13. solving problem with LSTM
+14. adding tensorboad variables.

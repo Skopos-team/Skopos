@@ -140,7 +140,9 @@ class Worker(Agent):
 						Plot.visualize_training(j, episode_reward)
 					if self.tensorboard_visualization == True:
 						self.summary = tf.Summary()
-						self.summary.value.add(tag='Reward', simple_value=float(np.mean(self.reward_list[-5:])))
+						self.summary.value.add(tag='Reward', simple_value=float(episode_reward))
+						self.summary.value.add(tag='Episode Length', simple_value=float(j))
+						self.summary.value.add(tag='Avg Expected Reward', simple_value=float(episode_avg_exp_rewards/j))
 						self.summary_writer.add_summary(self.summary, T)
 						self.summary_writer.flush()
 					break

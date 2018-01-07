@@ -75,7 +75,7 @@ def main():
 		sequences=1,   
 		training_info=True,
 		show_results=True,
-		tensorboard_visualization=False,
+		tensorboard_visualization=True,
 		training_parameters=False,
 		
 		save_model=False,

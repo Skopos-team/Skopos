@@ -3,10 +3,7 @@ from setuptools import setup, find_packages
 
 def check_dependencies():
     install_requires = []
-
-    # Just make sure dependencies exist, I haven't rigorously
-    # tested what the minimal versions that will work are
-    # (help on that would be awesome)
+    
     try:
         import numpy
     except ImportError:

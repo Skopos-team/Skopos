@@ -262,7 +262,11 @@ In the end of the training the user can see the Agent performances using the met
 
 - Number of actions per episode: in order to show that going further in the learning, the number of actions taken in an episode should decrease/increase based on the game obkective.
 
-- Max avg estimated Q-Values per episode: it provides an estimate of how much discounted reward the agent can obtain by following its policy from any given state.  
+- Average estimated Q-Values per episode: it provides an estimate of how much discounted reward the agent can obtain by following its policy from any given state.  
+
+Or alternatevely using Tensorboard (tensorboard_visualization=True) with the following command:
+
+	$ tensorboard --logdir=tensorboard/train/
 
 
 
