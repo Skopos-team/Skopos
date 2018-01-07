@@ -1,4 +1,6 @@
-# Skopos
+# Skopos - What do you want me to do?
+
+<img src="img/logo.png" width="50%">
 
 Skopos is a flexible Deep Reinforcement Learning Library which gives the possibility to the end user to implement and test faster the different Deep Reinforcement Learning techniques. The structure is based on hierarchical blocks; you can plug different techniques and experiment different combinations of “blocks”. For example using an AsynchronousAgent and AdvantageActorCritic as learning technique you generate A3C method.
 

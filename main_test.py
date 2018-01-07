@@ -1,8 +1,5 @@
 from __future__ import absolute_import
 
-import sys
-sys.path.append('../')
-
 """ Importing the Learner """
 from skopos.techniques.dqn import DQN
 from skopos.techniques.dueling_dqn import Dueling
@@ -54,7 +51,7 @@ def main():
 	network.set_optimizer(Gradient(learning_rate=0.4))
 
 	""" Definition of the learner, exploration strategy and policy """
-	exploration_strategy = DecrementalEGreedy(epsilon=0.9)
+	exploration_strategy = DecrementalEGreedy(epsilon=1)
 	policy = NetworkBasedPolicy()
 	memory = ExperienceReplay()
 	learner = DQN()
@@ -68,9 +65,9 @@ def main():
 		processors=4, 
 		number_of_episodes=1000, 
 		max_episode_duration=1000,
-		discount_factor=0.95, 
+		discount_factor=0.9, 
 		pretrain_steps=100,
-		batch_size=32,
+		batch_size=64,
 		update_frequency=1,
 		sequences=1,   
 		training_info=True,
