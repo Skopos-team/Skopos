@@ -6,9 +6,12 @@ Skopos is a flexible Deep Reinforcement Learning Library which gives the possibi
 
 The given environment must have the same characteristics as an OpenAI Gym environment. The methods used in the library are:
 
-env.reset(): 
+```python
+env.reset()
+```
 
 To restart the episode.
+
 ```python
 env.action_space.n
 ``` 
