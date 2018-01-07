@@ -51,7 +51,7 @@ def main():
 	network.add(Sigmoid())
 	network.add(FullyConnected(size=24))
 	network.add(Sigmoid())
-	network.set_optimizer(Gradient(learning_rate=0.1))
+	network.set_optimizer(Gradient(learning_rate=0.4))
 
 	""" Definition of the learner, exploration strategy and policy """
 	exploration_strategy = DecrementalEGreedy(epsilon=0.9)
@@ -75,7 +75,7 @@ def main():
 		sequences=1,   
 		training_info=True,
 		show_results=True,
-		tensorboard_visualization=True,
+		tensorboard_visualization=False,
 		training_parameters=False,
 		
 		save_model=False,
